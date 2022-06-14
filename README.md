@@ -1,5 +1,11 @@
 # IZTECHCENG
 
+### CENG212
+
+###### HW1:
+
+Q5: In the last question, cube function is dependent to square. Would be a small change but could be better to have it stand-alone.
+
 ### CENG322
 
 ###### HW2: 
