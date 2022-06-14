@@ -20,7 +20,7 @@ SYSCALL_DEFINE1(get_memory_usage, int, pid) {
 			if (mm) {
 				rss = get_mm_rss(mm) << PAGE_SHIFT; // get_mm_rss returns the number of pages, so we have to multiply this by the page size (equivalent to shifting with PAGE_SHIFT)
 				mmput(mm); // to release the mm we have gotten with get_task_mm(), this operation is used
-			return rss/1024; // the result returns bytes, so I am dividing it to get the same answer with "top" command
+				return rss/1024; // the result returns bytes, so I am dividing it to get the same answer with "top" command
         		}
     		}
 	}
